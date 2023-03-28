@@ -1,0 +1,34 @@
+<div>
+    <div class="row"  style="display: flex;justify-content: center;">
+        <div matTooltip="Screen 1" class="col-md-6 screen-box" (click)="showScreen1Details()">
+            <p *ngFor="let movie of screen1">{{movie.name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{movie.time}}</p>
+        </div>
+        <div matTooltip="Screen 2" class="col-md-6 screen-box" (click)="showScreen2Details()">
+            <p *ngFor="let movie of screen2">{{movie.name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{movie.time}}</p>
+        </div>
+    </div>
+    <div class="row" style="display: flex;justify-content: center;">
+        <div matTooltip="Screen 3" class="col-md-6 screen-box" (click)="showScreen3Details()">
+            <p *ngFor="let movie of screen3">{{movie.name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{movie.time}}</p>
+        </div>
+        <div matTooltip="Screen 4" class="col-md-6 screen-box" (click)="showScreen4Details()">
+            <p *ngFor="let movie of screen4">{{movie.name}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{movie.time}}</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- <mat-grid-list cols="2" rowHeight="3:1">
+    <mat-grid-tile ><p *ngFor="let movie of screen1">{{movie.name}}<br>
+        {{movie.time}}</p></mat-grid-tile>
+    <mat-grid-tile> <p *ngFor="let movie of screen2">{{movie.name}}<br>
+        {{movie.time}}</p></mat-grid-tile>
+    <mat-grid-tile><p *ngFor="let movie of screen3">{{movie.name}}<br>
+        {{movie.time}}</p></mat-grid-tile>
+    <mat-grid-tile><p *ngFor="let movie of screen4">{{movie.name}}<br>
+        {{movie.time}}</p></mat-grid-tile>
+  </mat-grid-list> -->

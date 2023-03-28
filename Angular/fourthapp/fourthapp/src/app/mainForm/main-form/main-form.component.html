@@ -1,0 +1,35 @@
+<div class="example-container">
+    <mat-form-field appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input [(ngModel)]="firstName" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input [(ngModel)]="lastName" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input  matInput placeholder="pat@example.com" [(ngModel)]="email">
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+      </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Date of Birth</mat-label>
+        <input [(ngModel)]="dob" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Field of Interest</mat-label>
+        <input  [(ngModel)]="interest" matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Select Campus</mat-label>
+        <mat-select [(ngModel)]="campus" >
+            <mat-option value="Davis Campus"> Davis Campus</mat-option>
+            <mat-option value="Trafalgar Road Campus"> Trafalgar Road Campus</mat-option>
+            <mat-option value="Hazel
+          McCallion Campus"> Hazel
+                McCallion Campus</mat-option>
+        </mat-select>
+        <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+    </mat-form-field>
+    <button [disabled]="!firstName || !lastName || !email || !dob || !interest || !campus" (click)="submitData()"  mat-raised-button color="primary">Submit</button>
+</div>

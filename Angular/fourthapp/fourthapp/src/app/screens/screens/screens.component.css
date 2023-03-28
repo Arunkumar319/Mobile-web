@@ -1,0 +1,14 @@
+.screen-box {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid #4050B5;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+mat-grid-tile {
+    background: lightblue;
+    width: 50%;
+  }

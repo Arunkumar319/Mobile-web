@@ -1,0 +1,23 @@
+<table>
+    <tr>
+        <th>Course Name</th>
+        <th>faculty</th>
+        <th>Credits</th>
+        <th>Duration</th>
+        <th>campus</th>
+        <th>fee</th>
+        <th>degree</th>
+        <th>programCoordinator</th>
+    </tr>
+    <tr *ngFor="let course of coursesList">
+        <td>{{course.courseName}}</td>
+        <td>{{course.faculty}}</td>
+        <td>{{course.credits}}</td>
+        <td>{{course.duration}}</td>
+        <td>{{course.campus}}</td>
+        <td>{{course.fee}}</td>
+        <td>{{course.degree}}</td>
+        <td>{{course.programCoordinator}}</td>
+    </tr>
+</table>
+

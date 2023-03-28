@@ -1,0 +1,13 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+mat-grid-tile {
+    background: lightblue;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  table {
+    width: 100%;
+  }

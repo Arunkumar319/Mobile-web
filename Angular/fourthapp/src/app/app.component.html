@@ -1,0 +1,21 @@
+<app-header [studentInfo]="student1"></app-header>
+
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+  <!-- Simple text label -->
+  <mat-tab label="Class List">
+    <app-json-list
+      [fetchHeader]="passHeader"
+      [fetchCourses]="passCourses"
+    ></app-json-list>
+  </mat-tab>
+
+  <!-- Label with Icon for External Data View -->
+  <mat-tab label="Term Buttons">
+    <app-json-buttons
+      [fetchHeader]="passHeader"
+      [fetchCourses]="passCourses"
+    ></app-json-buttons>
+  </mat-tab>
+</mat-tab-group>
+
+<app-footer></app-footer>
